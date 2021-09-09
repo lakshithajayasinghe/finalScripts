@@ -191,31 +191,6 @@ LOCK TABLES `house2` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `house3`
---
-
-DROP TABLE IF EXISTS `house3`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `house3` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `house3`
---
-
-LOCK TABLES `house3` WRITE;
-/*!40000 ALTER TABLE `house3` DISABLE KEYS */;
-/*!40000 ALTER TABLE `house3` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `newhouse`
 --
 
@@ -249,4 +224,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-09 14:33:14
+-- Dump completed on 2021-09-08 12:05:16
