@@ -29,6 +29,15 @@ CREATE TABLE `Persons1` (
   `Address` varchar(255) DEFAULT NULL,
   `City` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `Ptl` (
+  `PersonID` int(11) DEFAULT NULL,
+  `LastName` varchar(255) DEFAULT NULL,
+  `FirstName` varchar(255) DEFAULT NULL,
+  `Address` varchar(255) DEFAULT NULL,
+  `City` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -116,31 +125,6 @@ LOCK TABLES `Persons4` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Ptl`
---
-
-DROP TABLE IF EXISTS `Ptl`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Ptl` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `Ptl`
---
-
-LOCK TABLES `Ptl` WRITE;
-/*!40000 ALTER TABLE `Ptl` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Ptl` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `house`
 --
 
@@ -191,81 +175,6 @@ LOCK TABLES `house1` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `house10`
---
-
-DROP TABLE IF EXISTS `house10`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `house10` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `house10`
---
-
-LOCK TABLES `house10` WRITE;
-/*!40000 ALTER TABLE `house10` DISABLE KEYS */;
-/*!40000 ALTER TABLE `house10` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `house11`
---
-
-DROP TABLE IF EXISTS `house11`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `house11` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `house11`
---
-
-LOCK TABLES `house11` WRITE;
-/*!40000 ALTER TABLE `house11` DISABLE KEYS */;
-/*!40000 ALTER TABLE `house11` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `house12`
---
-
-DROP TABLE IF EXISTS `house12`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `house12` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `house12`
---
-
-LOCK TABLES `house12` WRITE;
-/*!40000 ALTER TABLE `house12` DISABLE KEYS */;
-/*!40000 ALTER TABLE `house12` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `house2`
 --
 
@@ -288,106 +197,6 @@ CREATE TABLE `house2` (
 LOCK TABLES `house2` WRITE;
 /*!40000 ALTER TABLE `house2` DISABLE KEYS */;
 /*!40000 ALTER TABLE `house2` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `house3`
---
-
-DROP TABLE IF EXISTS `house3`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `house3` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `house3`
---
-
-LOCK TABLES `house3` WRITE;
-/*!40000 ALTER TABLE `house3` DISABLE KEYS */;
-/*!40000 ALTER TABLE `house3` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `house4`
---
-
-DROP TABLE IF EXISTS `house4`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `house4` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `house4`
---
-
-LOCK TABLES `house4` WRITE;
-/*!40000 ALTER TABLE `house4` DISABLE KEYS */;
-/*!40000 ALTER TABLE `house4` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `house7`
---
-
-DROP TABLE IF EXISTS `house7`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `house7` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `house7`
---
-
-LOCK TABLES `house7` WRITE;
-/*!40000 ALTER TABLE `house7` DISABLE KEYS */;
-/*!40000 ALTER TABLE `house7` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `house8`
---
-
-DROP TABLE IF EXISTS `house8`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `house8` (
-  `PersonID` int(11) DEFAULT NULL,
-  `LastName` varchar(255) DEFAULT NULL,
-  `FirstName` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL,
-  `City` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `house8`
---
-
-LOCK TABLES `house8` WRITE;
-/*!40000 ALTER TABLE `house8` DISABLE KEYS */;
-/*!40000 ALTER TABLE `house8` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -424,4 +233,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-13 12:23:45
+-- Dump completed on 2021-09-08 12:05:16
